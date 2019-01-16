@@ -8,6 +8,7 @@ import { map } from 'rxjs/operators';
 
 export class AuthService {
   baseUrl = 'http://localhost:60287/api/auth/';
+  jwthelper = new JwtHelperService();
 
 constructor(private http: HttpClient) { }
 
