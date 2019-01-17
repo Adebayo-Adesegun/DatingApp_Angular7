@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { HttpClient } from 'selenium-webdriver/http';
 import { NavComponent } from './nav/nav.component';
 import {FormsModule} from '@angular/forms';
+import { BsDropdownModule } from 'ngx-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 
@@ -24,7 +25,8 @@ import { RegisterComponent } from './register/register.component';
       BrowserModule,
       AppRoutingModule,
       HttpClientModule,
-      FormsModule
+      FormsModule,
+      BsDropdownModule.forRoot()
    ],
    providers: [
       AuthService,
