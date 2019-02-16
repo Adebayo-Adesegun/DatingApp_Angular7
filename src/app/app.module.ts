@@ -31,6 +31,7 @@ import { JwtModule } from '@auth0/angular-jwt';
 import { MemberListResolver } from './_resolvers/member-list.resolver';
 import { PreventUnsavedChanges } from './_guards/prevent-unsaved-chnages.guard';
 import { FileUploadModule } from 'ng2-file-upload';
+import {TimeAgoPipe} from 'time-ago-pipe';
 
 export function tokenGetter() {
   return localStorage.getItem('token');
@@ -48,7 +49,8 @@ export function tokenGetter() {
       MemberCardComponent,
       MemberDetailComponent,
       MemberEditComponent,
-      PhotoEditorComponent
+      PhotoEditorComponent,
+      TimeAgoPipe
    ],
    imports: [
       BrowserModule,
