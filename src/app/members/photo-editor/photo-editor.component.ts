@@ -2,7 +2,7 @@ import { AlertifyService } from './../../_services/alertify.service';
 import { AuthService } from './../../_services/auth.service';
 import { environment } from 'src/environments/environment';
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Photo } from 'src/app/_modules/photo';
+import { Photo } from 'src/app/_models/photo';
 import { FileUploader } from 'ng2-file-upload';
 import { UserService } from 'src/app/_services/user.service';
 
